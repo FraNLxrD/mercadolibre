@@ -1,4 +1,4 @@
-.todo{
+body{
     background-color: #eed130;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -14,4 +14,15 @@ h1{font-size: 24}
 }
 #descripciones{
     font-size: 16px;
+}
+.burger-menu{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+#cosas{
+    text-align: center;
 }
