@@ -18,11 +18,16 @@ h1{font-size: 24}
 .burger-menu{
     width: 40px;
     height: 40px;
-    font-size: 25px;
+    font-size: 2em;
     background-color: blue;
     color: white;
     border-radius: 10px;
 }
 #cosas{
     text-align: center;
+}
+.lupa{
+    width: 50px;
+    height: 40px;
+    color: red;
 }
