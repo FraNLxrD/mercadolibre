@@ -1,9 +1,7 @@
 body{
     background-color: #eed130;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+    font-family: 'Roboto';
     font-size: 12px;
-    
 }
 h1{font-size: 24}
 #precios{
@@ -16,18 +14,46 @@ h1{font-size: 24}
     font-size: 16px;
 }
 .burger-menu{
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    display:flex;
+    align-items: center;
     width: 40px;
     height: 40px;
-    font-size: 2em;
-    background-color: blue;
-    color: white;
+    background-color: #1259c3;
     border-radius: 10px;
+    left: 250px;
+    bottom: 10px;
 }
-#cosas{
+.burger-menu i{
+    position: relative;
     text-align: center;
+    left: 14px;
+    font-size: 10;
 }
+#cosas p{
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+}
+
 .lupa{
-    width: 50px;
-    height: 40px;
-    color: red;
+    font-size: 15px;
+    color: black;
+}
+.piepagina{
+    background-color: white;
+    position: relative;
+    left: 1px;
+    text-align: center;
+    height: auto;
+    width: 700px;
+}   
+.piepagina i{
+    position: relative;
+    font-size: 2em;
+    left: 5px;
+    color: #1259c3;
 }
