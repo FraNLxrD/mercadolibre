@@ -1,7 +1,9 @@
-body{
+.todo{
     background-color: #eed130;
     font-family: 'Roboto';
     font-size: 12px;
+    position: relative;
+    text-align: center;
 }
 h1{font-size: 24}
 #precios{
@@ -24,8 +26,8 @@ h1{font-size: 24}
     height: 40px;
     background-color: #1259c3;
     border-radius: 10px;
-    left: 250px;
     bottom: 10px;
+    margin: auto;
 }
 .burger-menu i{
     position: relative;
@@ -36,7 +38,7 @@ h1{font-size: 24}
 #cosas p{
     font-size: 20px;
     position: relative;
-    left: 50px;
+    text-align: center;
 }
 
 .lupa{
@@ -46,14 +48,91 @@ h1{font-size: 24}
 .piepagina{
     background-color: white;
     position: relative;
-    left: 1px;
     text-align: center;
-    height: auto;
-    width: 700px;
+    padding: 15px;
 }   
 .piepagina i{
     position: relative;
     font-size: 2em;
-    left: 5px;
+    text-align: center;
     color: #1259c3;
+}
+.itemsbarra{
+    position: relative;
+    text-align: left;
+    font-size: 150%;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+.banner{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -2px;
+}
+.envio{
+    position: relative;
+    text-align: center;
+    color: green;
+    border: solid green 0.5px;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 1em;
+    margin: auto;
+}
+.envio i{
+    position: relative;
+    top: 30%;
+}
+#descuentos{
+     color: green;  
+     position: relative;
+     text-align: center;
+}
+#precios{
+    position: relative;
+    text-align: center;
+}
+#descripciones{
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.prod{
+    background-color:white;
+    padding: 15px;
+}
+@media (min-width: 361px) {
+    .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        padding-bottom:1px ;
+        margin-bottom: 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+@media (max-width:361px) {
+    #cosas ul{
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        padding-bottom:1px ;
+        margin-bottom: 10px;
+    }
+}
+.barralupa{
+    margin-left: 10px;
+    text-align: left;
 }
