@@ -5,13 +5,7 @@
     text-align: center;
 }
 h1{font-size: 24}
-#precios{
-    font-size: 18px;
-}
 #descuentos{
-    font-size: 16px;
-}
-#descripciones{
     font-size: 16px;
 }
 .burger-menu{
@@ -34,39 +28,21 @@ h1{font-size: 24}
     left: 14px;
     font-size: 10;
 }
-#cosas p{
-    font-size: 20px;
-    position: relative;
-    text-align: center;
-}
-
 .lupa{
     font-size: 15px;
     color: black;
 }
-.piepagina{
-    background-color: white;
-    position: relative;
-    text-align: center;
-    padding: 15px;
-}   
 .piepagina i{
-    position: relative;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2em;
     text-align: center;
     color: #1259c3;
 }
-.itemsbarra{
-    position: relative;
-    text-align: left;
-    font-size: 150%;
-}
 .logo{
-    position: relative;
-    text-align: center;
-    height: 50%;
     width: 50%;
-    margin: auto;
 }
 .banner{
     position: relative;
@@ -75,19 +51,24 @@ h1{font-size: 24}
     width: 100%;
     margin-bottom: -2px;
 }
-.envio{
-    position: relative;
-    text-align: center;
-    color: green;
-    border: solid green 0.5px;
+.envio > .iconito {
+    display: block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 20px;
+    top: -140px;
+    color: rgb(57, 181, 74);
+    padding: 5px;
     border-width: 1px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 1em;
-    margin: auto;
+    border-style: solid;
+    border-color: rgb(57, 181, 74);
+    border-image: initial;
+    border-radius: 50%;
 }
-.envio i{
+.envio {
     position: relative;
     top: 30%;
 }
@@ -96,31 +77,18 @@ h1{font-size: 24}
      position: relative;
      text-align: center;
 }
-#precios{
-    position: relative;
-    text-align: center;
-}
-#descripciones{
-    position: relative;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.prod{
-    background-color:white;
-    padding: 10px;
-    position: relative;
-   
-}
 @media (min-width: 361px) {
     .article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         padding-bottom:10px ;
         margin-bottom: 10px;
         padding-left: 1px;
+        margin: 10px;
     }
     .burger-menu{
         display: none;
     }
+    
     
 }
 @media (max-width:361px) {
@@ -139,17 +107,103 @@ h1{font-size: 24}
         padding-bottom:10px ;
         margin-bottom: 10px;
     }
+    .textogod {
+        font-size: 20px;
+        width: 50%;
+    }
+    .article {
+        box-shadow: rgb(100, 100, 100) 0px 0px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-.barralupa{
-    margin-left: 10px;
-    text-align: left;
-    height: auto;
+
+input {
+    width: 50%;
+}
+header {
+    background-color: rgb(238, 209, 48);
+    display: flex;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.barralupa {
+    text-align: center;
+    width: 50%;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.itemsbarra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 8px;
+}
+#cosas{
+    background-color: #eed130;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: auto;
 }
-header{
-    background-color: #eed130;
-    background-size: contain;
+.article{
+    background-color: white;
 }
-input{
-    height: 100%;
+.lll h1 {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.article img {
+    border-bottom: 1px solid rgb(240, 236, 236);
+}
+#precios {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.presdesc {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin: 15px 15px 15px 20px;
+}
+#descripciones {
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 20px;
+}
+footer {
+    margin-top: 20px;
+}
+.piepagina {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+.prod {
+    background-color: rgb(240, 236, 236);
+    position: relative;
+    padding: 10px;
 }
