@@ -88,16 +88,12 @@ h1{font-size: 24}
     .burger-menu{
         display: none;
     }
-    
-    
 }
 @media (max-width:361px) {
     #cosas ul{
         display: none;
     }
     img{
-        
-        height: 100%;
         width: 100%;
     }
 }
@@ -117,7 +113,6 @@ h1{font-size: 24}
         margin-right: auto;
     }
 }
-
 input {
     width: 50%;
 }
@@ -135,6 +130,7 @@ header {
 .barralupa {
     text-align: center;
     width: 50%;
+    margin-bottom: 20px
 }
 .barra {
     display: flex;
