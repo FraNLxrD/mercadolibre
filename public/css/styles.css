@@ -96,6 +96,13 @@ h1{font-size: 24}
     img{
         width: 100%;
     }
+    .textogod{
+        width: 100%;
+        margin: 20px;
+    }
+    header{
+        flex-wrap: wrap;
+    }
 }
 @media (min-width: 769px) {
     .article{
@@ -105,7 +112,7 @@ h1{font-size: 24}
     }
     .textogod {
         font-size: 20px;
-        width: 50%;
+        width: auto;
     }
     .article {
         box-shadow: rgb(100, 100, 100) 0px 0px 10px;
@@ -120,6 +127,7 @@ header {
     background-color: rgb(238, 209, 48);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 * {
     box-sizing: border-box;
@@ -165,6 +173,7 @@ li {
     text-align: left;
     font-size: 30px;
     margin-left: 30px;
+    width:auto;
 }
 .article img {
     border-bottom: 1px solid rgb(240, 236, 236);
@@ -200,6 +209,5 @@ footer {
 }
 .prod {
     background-color: rgb(240, 236, 236);
-    position: relative;
-    padding: 10px;
+    padding-top:10px ;
 }
