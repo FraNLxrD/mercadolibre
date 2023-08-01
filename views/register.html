@@ -6,6 +6,66 @@
     <title>Register</title>
 </head>
 <body>
-    
+    <form action="/views/register.html" method="post">
+      <p>
+        <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required>
+      </p>
+      <p>
+      <input type="text" name="user" placeholder="Nombre de usuario" required>
+      </p>
+      <p>
+      <input type="email" name="email" placeholder="E-Mail" required>
+      </p>
+      <p>
+        <label for="fechadenaccimiento">Fecha De Nacimiento</label>
+      </p>
+      <p>
+        <input type="date" name="fecha" value="2023-06-30" max="2005-01-01" id="fechadenaccimiento">
+      </p>
+      <p>
+        <input type="text" name="domcilio" placeholder="Domcilio" required>
+      </p>
+      <p>
+        <label for="tipoperfil" >Perfil de usuario</label>
+      </p>
+      <p>
+        <input type="radio" name="tipoperfil" value="Comprador" id="tipoperfil" required>Comprador
+        <input type="radio" name="tipoperfil" value="Vendedor" id="tipoperfil" required>Vendedor
+      </p>
+      <p>
+        <label for="catinteres">Categoria de interés</label>
+      </p>
+      <p>
+        <input type="checkbox" name="interes" value="electro">Electro
+      </p>
+      <p>
+        <input type="checkbox" name="interes" value="moda">Moda
+      </p>
+      <p>
+        <input type="checkbox" name="interes" value="hogar">Hogar
+      </p>
+      <p>
+        <input type="checkbox" name="interes" value="jugeteria">Jugueteria
+      </p>
+      <p>
+        <input type="checkbox" name="interes" value="vidasana">Vida sana
+      </p>
+      <p>
+        <label for="fotoperfil">Foto de usuario</label>
+      </p>
+      <p>
+        <input type="file" id="fotoperfil" name="fotoperfil" accept="image/*">
+      </p>
+      <p>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
+      </p>
+      <p>
+        <input type="password" name="contraseña" placeholder="Confirmar contraseña" required>
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar todo</button>
+      </p>
+    </form>
 </body>
 </html>
