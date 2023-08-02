@@ -14,16 +14,70 @@
     <title>Login</title>
 </head>
 <body class="todologin">
-    <form action="/login.html" method="post">
+   <header>
+      <nav class="logo">
+      <a href="/views/Home.html"><img src="/public/images/logo.svg" alt="logo"></a>
+      </nav>
+      <form class="barralupa">
+      <input type="busqueda" placeholder="Buscar Productos, marcas y más">
+      <button type="submit">
+          <div class="lupa">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+      </button>
+      </form>
+      <nav class="textogod">
+          <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas sin tarjeta de credito</p>
+          </nav>
+      </header>
+   <nav id="cosas">
+        
+      <div class="barra">
+      <ul class="itemsbarra">
+      <li><a href="http://127.0.0.1:5500/views/home.html">Ofertas</a></li>
+      <li><a href="http://127.0.0.1:5500/views/home.html">Tiendas Oficiales</a></li><a href="http://127.0.0.1:5500/views/home.html">
+      </a><li><a href="http://127.0.0.1:5500/views/home.html"></a><a href="http://127.0.0.1:5500/views/home.html">Vender</a></li>
+      <li><a href="http://127.0.0.1:5500/views/home.html">Ayuda</a></li>
+      </ul>
+      <ul class="itemsbarra">
+      <li><a href="/views/register.html">Crea tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+      <li><a href="/views/login.html">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></li>
+      <li><a href="http://127.0.0.1:5500/views/home.html">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+      </ul>
+      </div>
+      <div class="burger-menu">
+          <div class="forma"></div>
+          <i class="fas fa-bars" aria-hidden="true"></i>
+      </div>
+      
+  </nav>
+    <form class="loge" action="/login.html" method="post">
      <p>
-        <input type="text" name="nombreusuario" id="username" placeholder="Nombre de usuario">
+        <input type="text" name="nombreusuario" id="username" placeholder="Nombre de usuario" required minlength="5">
      </p>
      <p>
-        <input type="password" name="contraseña" id="password" placeholder="Contraseña">
+        <input type="password" name="contraseña" id="password" placeholder="Contraseña" required minlength="8">
      </p>
      <p>
-        <button type="submit">Enviar</button>
+        <button class="sub" type="submit">Enviar</button>
      </p>
     </form>
+    <footer>
+      <section class="piepagina">
+          <i class="fa-solid fa-credit-card"></i>
+          <h1>Paga con tarjeta o en efectivo</h1>
+          <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+              puntos de pago. ¡Y siempre es seguro!</p>
+          <i class="fa-solid fa-gift"></i>
+          <h1>Envio gratis desde $ 2.500</h1>
+          <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+              productos. Es un beneficio de Mercado Puntos.</p>
+          <i class="fa-solid fa-user-shield"></i>
+          <h1>Seguridad, de principio a fin</h1>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+              porque estás siempre protegid@.</p>
+          <p class="copy">Copyright © 1999-2020 MercadoLiebre S.R.L.
+      </p></section>
+  </footer>
 </body>
 </html>

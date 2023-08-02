@@ -15,21 +15,21 @@
 </head>
 
 <body class="todoregister">
-    <header>
-        <nav class="logo">
-        <img src="/public/images/logo.svg" alt="logo">
+  <header>
+    <nav class="logo">
+      <a href="/views/Home.html"><img src="/public/images/logo.svg" alt="logo"></a>
+    </nav>
+    <form class="barralupa">
+    <input type="busqueda" placeholder="Buscar Productos, marcas y más">
+    <button type="submit">
+        <div class="lupa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </button>
+    </form>
+    <nav class="textogod">
+        <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas sin tarjeta de credito</p>
         </nav>
-        <nav class="barralupa">
-        <input type="busqueda" placeholder="buscar">
-        <button>
-            <div class="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            </button>
-        </nav>
-        <nav class="textogod">
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas sin tarjeta de credito</p>
-            </nav>
     </header>
     <nav id="cosas">
         
@@ -54,6 +54,7 @@
     </nav>
     <section class="formu">
     <form action="/views/register.html" method="post">
+      <div class="textofecha">
       <p>
         <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required>
       </p>
@@ -72,6 +73,7 @@
       <p>
         <input type="text" name="domcilio" placeholder="Domcilio" required>
       </p>
+     </div>
       <p>
         <label for="tipoperfil" >Perfil de usuario</label>
       </p>
@@ -109,12 +111,14 @@
       <p>
         <input type="file" id="fotoperfil" name="fotoperfil" accept="image/*">
       </p>
+      <div class="textofecha">
       <p>
-        <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required minlength="8">
       </p>
       <p>
-        <input type="password" name="contraseña" placeholder="Confirmar contraseña" required>
+        <input type="password" name="contraseña" placeholder="Confirmar contraseña" required minlength="8">
       </p>
+      </div>
       <p>
         <button class="env" type="submit">Enviar</button>
         <button class="res" type="reset">Borrar todo</button>

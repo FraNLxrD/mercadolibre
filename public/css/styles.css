@@ -44,7 +44,9 @@
     color: #1259c3;
 }
 .logo{
-    width: 50%;
+    width: 100%;
+    margin: 20px;
+    margin-right: 30px;
 }
 .banner{
     position: relative;
@@ -90,6 +92,13 @@
     .burger-menu{
         display: none;
     }
+    .textofecha input{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .loge input{
+        width: 50%;
+    }
 }
 @media (max-width:361px) {
     #cosas ul{
@@ -99,13 +108,18 @@
         width: 100%;
     }
     .textogod{
+        font-size: 20px;
         width: 100%;
         margin: 20px;
     }
     header{
         flex-wrap: wrap;
     }
-    .formu input{
+    .textofecha input{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .loge input{
         width: 100%;
     }
 }
@@ -117,7 +131,7 @@
     }
     .textogod {
         font-size: 20px;
-        width: auto;
+        width: 100%;
     }
     .article {
         box-shadow: rgb(100, 100, 100) 0px 0px 10px;
@@ -125,14 +139,13 @@
         margin-right: auto;
     }
 }
-input {
-    width: 50%;
-}
+
 header {
     background-color: rgb(238, 209, 48);
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 * {
     box-sizing: border-box;
@@ -141,9 +154,27 @@ header {
     font-family: 'Roboto';
 }
 .barralupa {
-    text-align: center;
-    width: 50%;
-    margin-bottom: 20px
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    ;
+}
+.barralupa button{
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    border: 0px;
+    align-items: end;
+    margin-right: 10px;
+}
+.barralupa input{
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+    width: 100%;
 }
 .barra {
     display: flex;
@@ -218,7 +249,7 @@ footer {
     padding-top:10px ;
 }
 /*              REGISTER            */
-form{
+.formu{
     padding: 20px;
     text-align: center;
     background-color:rgb(240, 236, 236) ;
@@ -247,12 +278,10 @@ label{
    justify-content: center;
    flex-wrap: wrap;
 }
-.tipoperfil input{
-    width: auto;  
-}
 .formu p{
     margin: 10px;
 }
+
 .formu input{
     text-align: center;
     border-radius: 5px;
@@ -292,5 +321,35 @@ footer p{
     font-size: 15px;
 }
 .copy{
+    margin-top: 10px;
     font-size: 10px;
+}
+/*              LOGIN         */
+
+.loge{
+    padding: 40px;
+    text-align: center;
+    background-color:rgb(240, 236, 236) ;
+}
+.loge input{
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+}
+.sub{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #1259c3;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
 }
