@@ -4,7 +4,9 @@
     position: relative;
     text-align: center;
 }
-h1{font-size: 24}
+.piepagina h1{
+    font-size: 24px
+}
 #descuentos{
     font-size: 16px;
 }
@@ -103,6 +105,9 @@ h1{font-size: 24}
     header{
         flex-wrap: wrap;
     }
+    .formu input{
+        width: 100%;
+    }
 }
 @media (min-width: 769px) {
     .article{
@@ -133,8 +138,8 @@ header {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto';
 }
-
 .barralupa {
     text-align: center;
     width: 50%;
@@ -210,4 +215,81 @@ footer {
 .prod {
     background-color: rgb(240, 236, 236);
     padding-top:10px ;
+}
+/*              REGISTER            */
+form{
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(240, 236, 236) ;
+}
+.checkboxs{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   
+}
+.checkboxs input{
+    width: auto;
+}
+label{
+    display: flex;
+    padding: 10px;
+    margin-left: 25%;
+    font-size: 15px;
+    color: gray;
+    font-weight:bold ;
+}
+.tipoperfil{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.tipoperfil input{
+    width: auto;  
+}
+.formu p{
+    margin: 10px;
+}
+.formu input{
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+}
+.formu button{
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+    border: 0px;
+    height: 40px;
+}
+.env{
+    background-color: #1259c3;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+.res{
+    background-color: rgba(65,137,230,.2);
+    color: #1259c3;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 15px;
+}
+.copy{
+    font-size: 10px;
 }

@@ -3,15 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="/public/css/styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="/public/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <script src="https://kit.fontawesome.com/5adb87e91f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
-<body>
+
+<body class="todoregister">
+    <header>
+        <nav class="logo">
+        <img src="/public/images/logo.svg" alt="logo">
+        </nav>
+        <nav class="barralupa">
+        <input type="busqueda" placeholder="buscar">
+        <button>
+            <div class="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            </button>
+        </nav>
+        <nav class="textogod">
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas sin tarjeta de credito</p>
+            </nav>
+    </header>
+    <nav id="cosas">
+        
+        <div class="barra">
+        <ul class="itemsbarra">
+        <li><a href="http://127.0.0.1:5500/views/home.html">Ofertas</a></li>
+        <li><a href="http://127.0.0.1:5500/views/home.html">Tiendas Oficiales</a></li><a href="http://127.0.0.1:5500/views/home.html">
+        </a><li><a href="http://127.0.0.1:5500/views/home.html"></a><a href="http://127.0.0.1:5500/views/home.html">Vender</a></li>
+        <li><a href="http://127.0.0.1:5500/views/home.html">Ayuda</a></li>
+        </ul>
+        <ul class="itemsbarra">
+        <li><a href="/views/register.html">Crea tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+        <li><a href="/views/login.html">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></li>
+        <li><a href="http://127.0.0.1:5500/views/home.html">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+        </ul>
+        </div>
+        <div class="burger-menu">
+            <div class="forma"></div>
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </div>
+        
+    </nav>
+    <section class="formu">
     <form action="/views/register.html" method="post">
       <p>
         <input type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required>
       </p>
       <p>
-      <input type="text" name="user" placeholder="Nombre de usuario" required>
+      <input type="text" name="user" placeholder="Nombre de usuario" minlength="5" required>
       </p>
       <p>
       <input type="email" name="email" placeholder="E-Mail" required>
@@ -28,28 +75,34 @@
       <p>
         <label for="tipoperfil" >Perfil de usuario</label>
       </p>
+      <div class="tipoperfil">
       <p>
-        <input type="radio" name="tipoperfil" value="Comprador" id="tipoperfil" required>Comprador
-        <input type="radio" name="tipoperfil" value="Vendedor" id="tipoperfil" required>Vendedor
+        <input type="radio" name="tipoperfil" value="Comprador" id="tipoperfil" required placeholder=""><p>Comprador</p>
       </p>
+      <p>
+        <input type="radio" name="tipoperfil" value="Vendedor" id="tipoperfil" required><p>Vendedor</p>
+      </p>
+      </div>
       <p>
         <label for="catinteres">Categoria de interés</label>
       </p>
+      <div class="checkboxs">
       <p>
-        <input type="checkbox" name="interes" value="electro">Electro
+        <input type="checkbox" name="interes" value="electro"><p>Electro</p>
       </p>
       <p>
-        <input type="checkbox" name="interes" value="moda">Moda
+        <input type="checkbox" name="interes" value="moda"><p>Moda</p>
       </p>
       <p>
-        <input type="checkbox" name="interes" value="hogar">Hogar
+        <input type="checkbox" name="interes" value="hogar"><p>Hogar</p>
       </p>
       <p>
-        <input type="checkbox" name="interes" value="jugeteria">Jugueteria
+        <input type="checkbox" name="interes" value="jugeteria"><p>Jugueteria</p>
       </p>
       <p>
-        <input type="checkbox" name="interes" value="vidasana">Vida sana
+        <input type="checkbox" name="interes" value="vidasana"><p>Vida sana</p>
       </p>
+     </div>
       <p>
         <label for="fotoperfil">Foto de usuario</label>
       </p>
@@ -63,9 +116,27 @@
         <input type="password" name="contraseña" placeholder="Confirmar contraseña" required>
       </p>
       <p>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar todo</button>
+        <button class="env" type="submit">Enviar</button>
+        <button class="res" type="reset">Borrar todo</button>
       </p>
     </form>
+   </section>
+   <footer>
+    <section class="piepagina">
+        <i class="fa-solid fa-credit-card"></i>
+        <h1>Paga con tarjeta o en efectivo</h1>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        <i class="fa-solid fa-gift"></i>
+        <h1>Envio gratis desde $ 2.500</h1>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+        <i class="fa-solid fa-user-shield"></i>
+        <h1>Seguridad, de principio a fin</h1>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+        <p class="copy">Copyright © 1999-2020 MercadoLiebre S.R.L.
+    </p></section>
+</footer>
 </body>
 </html>
