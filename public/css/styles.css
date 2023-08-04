@@ -63,7 +63,7 @@
     background-color: rgb(255, 255, 255);
     position: absolute;
     right: 20px;
-    top: -140px;
+    top: -120px;
     color: rgb(57, 181, 74);
     padding: 5px;
     border-width: 1px;
@@ -81,14 +81,36 @@
      position: relative;
      text-align: center;
 }
+.productos >nav:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition-duration: 0.2s;
+    #descripciones {
+        display: flex;
+        text-align: left;
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 20px;
+        padding: 5px 5px 5px 20px;
+        visibility: visible;
+        
+    }
+    .envio>.iconito{
+        transition-duration: 0;
+        top:-135px
+    }
+}
+.article:hover{
+    height: 400px;
+}
 @media (min-width: 361px) {
     .article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         padding-bottom:10px ;
         margin-bottom: 10px;
         padding-left: 1px;
         margin: 10px;
     }
+    
+    
     .burger-menu{
         display: none;
     }
@@ -103,6 +125,10 @@
 @media (max-width:361px) {
     #cosas ul{
         display: none;
+    }
+    
+    .article{
+        height: 100%;
     }
     img{
         width: 100%;
@@ -122,10 +148,11 @@
     .loge input{
         width: 100%;
     }
+    
 }
 @media (min-width: 769px) {
     .article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
         padding-bottom:10px ;
         margin-bottom: 10px;
     }
@@ -134,12 +161,18 @@
         width: 100%;
     }
     .article {
-        box-shadow: rgb(100, 100, 100) 0px 0px 10px;
+        
         margin-left: auto;
         margin-right: auto;
     }
+    
+    
 }
-
+@media (min-width: 1300px) {
+    .productos {
+        height: 400px;
+    }
+}
 header {
     background-color: rgb(238, 209, 48);
     display: flex;
@@ -203,6 +236,7 @@ li {
     width: auto;
 }
 .article{
+    height: 350px;
     background-color: white;
 }
 .lll h1 {
@@ -210,6 +244,7 @@ li {
     font-size: 30px;
     margin-left: 30px;
     width:auto;
+    height: auto;
 }
 .article img {
     border-bottom: 1px solid rgb(240, 236, 236);
@@ -228,21 +263,26 @@ li {
     margin: 15px 15px 15px 20px;
 }
 #descripciones {
-    display: flex;
-    text-align: left;
-    font-size: 16px;
-    color: gray;
-    margin-bottom: 20px;
-    padding: 5px 5px 5px 20px;
+    display: none;
+    visibility: hidden;
 }
 footer {
+    background-color: white;
     margin-top: 20px;
 }
 .piepagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     text-align: center;
     padding: 10px;
     padding-bottom:20px ;
+    margin: 30px;
+}
+.piepagina i:hover{
+    transition-duration: 0.2s;
+    color: rgb(18, 89, 195,0.5);
 }
 .prod {
     background-color: rgb(240, 236, 236);
@@ -306,8 +346,9 @@ label{
     font-weight: bold;
     justify-content: center;
 }
+
 .res{
-    background-color: rgba(65,137,230,.2);
+    background-color: rgba(65,137,230,0.2);
     color: #1259c3;
     font-weight: bold;
     font-size: 20px;
@@ -317,12 +358,16 @@ label{
     align-items: center;
     justify-content: center;
 }
+
 footer p{
     font-size: 15px;
 }
 .copy{
+    text-align: left;
+    margin-left: 20px;
     margin-top: 10px;
     font-size: 10px;
+    background-color: white;
 }
 /*              LOGIN         */
 
@@ -352,4 +397,8 @@ footer p{
     align-items: center;
     font-weight: bold;
     justify-content: center;
+}
+.sub:hover{
+    transition-duration: 0.2s;
+    background-color:#0022AA
 }
