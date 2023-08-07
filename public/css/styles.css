@@ -72,10 +72,19 @@
     border-image: initial;
     border-radius: 50%;
 }
+@keyframes vueltitas {
+    0% {
+         transform: rotate(0deg);
+       }
+     100% {
+         transform: rotate(-90deg); 
+     }
+ }
 .envio {
     position: relative;
     top: 30%;
 }
+
 #descuentos{
      color: green;  
      position: relative;
@@ -95,8 +104,10 @@
         
     }
     .envio>.iconito{
-        transition-duration: 0;
-        top:-135px
+        transition-duration: 0s;
+        top:-135px;
+        animation: vueltitas 2s linear infinite;
+        animation-delay:0.5s ;
     }
 }
 .article:hover{
