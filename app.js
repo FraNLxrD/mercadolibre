@@ -3,7 +3,7 @@ const app = express();
 const path =require('path')
 const publicPtah=path.resolve(__dirname,'./public')
 const port =process.env.PORT || 3001;
-app.use
+app.use(express.static(publicPtah))
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'/views/home.html'))
 })
